@@ -34,6 +34,7 @@ import com.bezkoder.spring.jwt.mongodb.security.services.UserDetailsServiceImpl;
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/api/auth")
+
 public class AuthController {
 	@Autowired
 	AuthenticationManager authenticationManager;
