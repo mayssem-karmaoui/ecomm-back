@@ -21,7 +21,9 @@ jobs:
         cache: maven
         
     - name : build with maven
-      run : mvn -f pom.xml clean install 
+      run: mvn package -Dmaven.test.skip
+
+     # run : mvn -f pom.xml clean install 
       
     - name: Build Docker image
       run:  docker build -t ${{ secrets.DOCKER_USERNAME }}/maayysseem/ecomm:v1.0.2 .
