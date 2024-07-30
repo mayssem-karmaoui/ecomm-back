@@ -20,6 +20,9 @@ jobs:
         distribution: 'adopt'
         cache: maven
 
+    - name: Set executable permissions for Maven wrapper
+      run: chmod +x ./mvnw
+
     - name: Build JAR file
       run: ./mvnw package --file pom.xml # or `./gradlew build` for Gradle
       
