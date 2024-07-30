@@ -19,12 +19,9 @@ jobs:
         java-version: '17'
         distribution: 'adopt'
         cache: maven
-
-    - name: Set executable permissions for Maven wrapper
-      run: chmod +x ./mvnw
-
-    - name: Build JAR file
-      run: ./mvnw package --file pom.xml # or `./gradlew build` for Gradle
+        
+    - name : build with maven
+      run : mvn clean install
       
     - name: Build Docker image
       run:  docker build -t ${{ secrets.DOCKER_USERNAME }}/maayysseem/ecomm:v1.0.2 .
