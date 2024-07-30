@@ -2,12 +2,13 @@
 FROM openjdk:17-jdk-alpine
 
 #container working directory
-WORKDIR /app
+# WORKDIR /app
 
 #copy package file
-COPY target/*.jar app.jar
+ADD /target/*.jar app.jar
 
 EXPOSE 8000
 
 # Define the command to run the application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+CMD [ "-jar", "/app.jar"]
+ENTRYPOINT ["java"]
