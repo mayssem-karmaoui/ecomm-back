@@ -1,6 +1,1 @@
-<<<<<<< HEAD
-# e-commerce
-Summer internship 2024 e-commerce website project Lady-Bio SpringBoot and react.js
-=======
-
->>>>>>> da8cb69692ed9d5b9dc7ca9d098e80f3dd3c5520
+A robust back-end for an eCommerce platform built with Spring Boot. This project provides APIs for handling user authentication, product management, shopping cart functionality. It’s designed for performance, scalability, and security, integrating seamlessly with the front-end for a complete eCommerce experience.
